@@ -1,17 +1,29 @@
-//WAP to find the difference between ASCII of two characters ,take them as input .
+/* Write a program to input sides of a triangle and check whether a triangle is equilateral, scalene or 
+isosceles triangle*/
 #include<iostream>
 using namespace std;
 int main(){
-    char ch1,ch2;
-    cout<<"Enter your 1st char ";
-    cin>>ch1;
+    int a,b,h;
+    cout<<"Enter a side:";
+    cin>>a;
+    cout<<"Enter a base:";
+    cin>>b;
+    cout<<"Enter a Height:";
+    cin>>h;
+    if (a == b && b==h && h==a){
+        cout<<"It is a equilateral triangle:\n";
+        
+    }
+    else if (a == b || b == h || h == a)
+    {
+         cout<<"It is a Isoceles triangle:\n";
+    }
+    else{
+         cout<<"It is a Scalene triangle:\n";
+    }
+    
+   
 
-    cout<<"Enter your 2nd char ";
-    cin>>ch2;
-
-    int x=ch1;
-    int y=ch2;
-    cout<<x-y;
 
 
 
