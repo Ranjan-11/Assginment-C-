@@ -1,17 +1,13 @@
-//Write a function to print squares of first n natural numbers, taking n as argument to the function
+/*Write a program to find the product of two numbers using pointers.*/
 #include<iostream>
 using namespace std;
-int square(int n){
-    for (int i = 1; i <= n; i++)
-    {
-        cout<<i*i<<endl;
-    }
-}
 int main(){
-    int n;
-    cin>>n;
-    square(n);
-    
-    
-    
+    int a;
+    cin>>a;
+    int b;
+    cin>>b;
+    int* ptr1= &a;
+    int* ptr2= &b;
+    cout<<(*ptr1)*(*ptr2)<<endl;
+     
 }
